@@ -1,0 +1,45 @@
+@import './variable';
+
+body {
+    background: $light-gray;
+    font-family: Outfit, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card {
+    background: $white;
+    max-width: 300px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: auto;
+    // /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 3px 3px 10px 3px $light-gray;
+    &__img {
+        border-radius: .5rem;
+        // min-width: fit-content(100%);
+        min-width: auto;
+    }
+    &__title {
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    &__body {
+        padding: 0 1rem 1rem;
+        text-align: center;
+        color: $grayish-blue;
+    }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
