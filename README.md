@@ -18,13 +18,13 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](/dist/images/screenshot.png)
+![](./dist/assets/images/screenshot.jpg)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/loifloro/qr-code-component)
+- Live Site URL: [Github Pages](https://loifloro.github.io/qr-code-component/dist/)
 
 ## My process
 
@@ -33,6 +33,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Mobile-first workflow
+- CSS Grid
 - SCSS
 - BEM Methodology
 
@@ -45,12 +46,13 @@ I learned in this activity how to properly center a div using flex to its parent
 body {
     background: $light-gray;
     font-family: Outfit, sans-serif;
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
 .card {
     background: $white;
-    max-width: 300px;
+    max-width: 330px;
     border-radius: 1rem;
     padding: 1rem;
     margin: auto;
