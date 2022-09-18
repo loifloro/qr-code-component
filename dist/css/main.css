@@ -76,8 +76,9 @@ select {
 body {
   background: hsl(212deg, 45%, 89%);
   font-family: Outfit, sans-serif;
-  display: flex;
-  flex-direction: column;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 p {
@@ -87,10 +88,11 @@ p {
 
 .card {
   background: hsl(0deg, 0%, 100%);
-  max-width: 300px;
+  max-width: 330px;
   border-radius: 1rem;
   padding: 1rem;
   margin: auto;
+  text-align: center;
   box-shadow: 3px 3px 10px 3px hsl(212deg, 45%, 89%);
 }
 .card__img {
@@ -98,11 +100,12 @@ p {
   min-width: auto;
 }
 .card__title {
-  padding: 1rem 1rem;
-  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: hsl(218deg, 44%, 22%);
 }
 .card__body {
-  padding: 0 1rem 1rem;
+  padding: 1rem 1rem;
   text-align: center;
   color: hsl(220deg, 15%, 55%);
 }

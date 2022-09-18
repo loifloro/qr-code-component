@@ -3,9 +3,11 @@
 body {
     background: $light-gray;
     font-family: Outfit, sans-serif;
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+    display: grid;
+    place-items: center;
 }
+
 p {
     font-size: 15px;
     font-weight: 400;
@@ -13,23 +15,29 @@ p {
 
 .card {
     background: $white;
-    max-width: 300px;
+    max-width: 330px;
     border-radius: 1rem;
     padding: 1rem;
     margin: auto;
+    text-align: center;
     // /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 3px 3px 10px 3px $light-gray;
+
     &__img {
         border-radius: .5rem;
         // min-width: fit-content(100%);
         min-width: auto;
     }
+
     &__title {
-        padding: 1rem 1rem;
-        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        color: $dark-blue;
     }
+
     &__body {
-        padding: 0 1rem 1rem;
+        // padding: 0 1rem 1rem;
+        padding: 1rem 1rem;
         text-align: center;
         color: $grayish-blue;
     }
