@@ -40,7 +40,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### What I learned
 
-I learned in this activity how to properly center a div using flex to its parent and margin: auto to its child element. 
+I learned in this activity how to properly center a div using grid and place-items: center. 
 
 ```css
 body {
